@@ -6,5 +6,6 @@ dev=$(storage-get location)
 
 mkfs -t ext4 $dev
 
+mkdir -p /srv/testing
 mount $dev /srv/testing
 chown 0777 /srv/testing
