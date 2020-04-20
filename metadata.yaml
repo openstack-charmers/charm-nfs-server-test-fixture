@@ -8,3 +8,9 @@ series:
   - bionic
   - focal
   - eoan
+storage:
+  share:
+    type: block
+    multiple:
+      range: 0-1
+    minimum-size: 10G

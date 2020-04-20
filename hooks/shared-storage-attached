@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -ex
+
+dev=$(storage-get location)
+
+mkfs -t ext4 $dev
+
+mount $dev /srv/testing
+chown 0777 /srv/testing
