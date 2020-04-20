@@ -1,0 +1,10 @@
+name: nfs-server-test-fixture
+summary: NFS server test fixture for OpenStack Testing
+maintainer: OpenStack Charmers <openstack-charmers@lists.ubuntu.com>
+description: Basic NFS server for testing OpenStack services
+tags:
+  - misc
+series:
+  - bionic
+  - focal
+  - eoan

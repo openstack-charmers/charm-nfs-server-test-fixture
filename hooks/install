@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -ex
+
+apt -y install nfs-server
+
+mkdir -p /srv/testing
+chmod 0777 /srv/testing
+
+cat <<EOF > /etc/exports
+# Test export with no permission restrictures
+/srv/testing *(rw,sync,no_root_squash)
+EOF
+
+systemctl restart nfs-server
+
+status-set 'active' 'Unit is ready'
