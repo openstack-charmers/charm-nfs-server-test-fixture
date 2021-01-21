@@ -1,0 +1,3 @@
+config:
+  linux.kernel_modules: nfs
+  security.privileged: true
